@@ -1,0 +1,11 @@
+name: SITeam Release Branch Marge Action
+on: [push]
+jobs:
+  FT-Branch-Marge-to-Main-Branch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "start!!!!!"
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
